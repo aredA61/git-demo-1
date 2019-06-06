@@ -1,0 +1,657 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
+<title>提示信息 -  逆风学习网 -  Powered by Discuz!</title>
+
+<meta name="keywords" content="">
+<meta name="description" content=",逆风学习网">
+<meta name="generator" content="Discuz! X3.4">
+<meta name="author" content="Discuz! Team and Comsenz UI Team">
+<meta name="copyright" content="2001-2017 Comsenz Inc.">
+<meta name="MSSmartTagsPreventParsing" content="True">
+<meta http-equiv="MSThemeCompatible" content="Yes">
+<base href="http://www.itwar.cn/"><link rel="stylesheet" type="text/css" href="data/cache/style_6_common.css?Pxs"><link rel="stylesheet" type="text/css" href="data/cache/style_6_forum_index.css?Pxs"><script type="text/javascript">var STYLEID = '6', STATICURL = 'static/', IMGDIR = 'static/image/common', VERHASH = 'Pxs', charset = 'gbk', discuz_uid = '0', cookiepre = 'mqk0_2132_', cookiedomain = '', cookiepath = '/', showusercard = '1', attackevasive = '0', disallowfloat = 'newthread', creditnotice = '1|威望|,3|贡献|,4|金钱|', defaultstyle = '', REPORTURL = '', SITEURL = 'http://www.itwar.cn/', JSPATH = 'static/js/', CSSPATH = 'data/cache/style_', DYNAMICURL = '';</script>
+<script src="static/js/common.js?Pxs" type="text/javascript"></script>
+<meta name="application-name" content="逆风学习网">
+<meta name="msapplication-tooltip" content="逆风学习网">
+<meta name="msapplication-task" content="name=论坛主页;action-uri=http://www.itwar.cn/forum.php;icon-uri=http://www.itwar.cn/static/image/common/bbs.ico">
+<meta name="msapplication-task" content="name=动态;action-uri=http://www.itwar.cn/home.php;icon-uri=http://www.itwar.cn/static/image/common/home.ico"><link rel="archives" title="逆风学习网" href="http://www.itwar.cn/archiver/">
+<script src="static/js/forum.js?Pxs" type="text/javascript"></script>
+<script type="text/javascript" id="lmTmbVVclVTcTqUcllCqlngWXYbgXWWW" charset="GBK" src="static/js/ajax.js?Pxs"></script><script src="http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=433272"></script><script type="text/javascript" id="nBuVuMXGKUNLJrsqvXPqtMUbrmqPmItq" charset="GBK">
+(function () {
+    window.console = window.console || {log: function() {return false;}}
+    console.log('vaptcha version 2.3.1')
+    function addEvent(el, type, cb){
+        if (el.addEventListener) {
+            el.addEventListener(type, cb); 
+        } else if (el.attachEvent)  {
+            el.attachEvent('on' + type, cb);
+        }
+    }
+    function onload() {
+        var initVaptcha = function(element, form, type, successCallback){
+            var _v = new function () {
+                this.isPass = false;
+                this.vaptcha = null;
+                this.msg = null;
+                this.refresh = function () {
+                    if (this.isPass) {
+                        // this.vaptcha.destroy();
+                        // return initVaptcha(element, form, type, successCallback);
+                        this.vaptcha.reset();
+                    }
+                    return this;
+                };
+                this.notify = function () {
+                    if (this.msg) {
+                        this.msg.style.display = 'block';
+                    } else {
+                        var msg = document.createElement('span');
+                        msg.className = 'rq';
+                        msg.innerHTML = '&#35831;&#36827;&#34892;&#20154;&#26426;&#39564;&#35777;';
+                        this.msg = msg;
+                        element.parentNode.appendChild(msg);
+                    }
+                }
+            }()
+            var options = {
+                vid: '5b83baaafc650e5e989e3273',
+                container: element,
+                type: 'click',
+                // effect: "popup",
+                style: "dark",
+                https: false,
+                color: "#57ABFF",
+                lang: 'zh-CN',
+                scene: '01',
+                ai: true,
+                outage: './plugin.php?id=vaptcha&type=downtime'
+            }
+            window.vaptcha(options).then(function (obj) {
+                obj.listen('pass', function () {
+                    _v.isPass = true;
+                    _v.msg && (_v.msg.style.display = 'none');
+                    var input = form.querySelectorAll('input[name="vaptcha_token"]')[0];
+                    input.value = obj.getToken()
+                    successCallback && successCallback();
+                })
+                var inputs = form.getElementsByTagName('input');
+                obj.render();
+                _v.vaptcha = obj;
+            })   
+            return _v;
+        }
+        var form = document.getElementById('vaptcha_5cf867786ade3'); 
+        var vaptcha = document.getElementById('vaptcha_container_5cf867786ade3'); 
+        
+var vaptcha = document.getElementById('vaptcha_container_5cf867786ade3');
+_vaptcha = initVaptcha(vaptcha, form);
+
+
+var loginbtn = form.parentElement.getElementsByTagName('button')['loginsubmit'];
+addEvent(loginbtn, 'click',function(){
+    _vaptcha.refresh();
+})
+
+
+
+
+    }
+    var script = document.getElementById('vaptcha_v_js');
+    if(script && script.loaded == 'success'){ 
+        onload();
+    } else {
+        script = document.createElement('script');
+        script.src = 'https://cdn.vaptcha.com/v2.js';
+        script.id = 'vaptcha_v_js';
+        script.onload = script.onreadystatechange = function(){
+            if(!this.readyState || this.readyState=='loaded' || this.readyState=='complete'){ 
+                onload();
+                script.loaded = true;
+                script.onload = script.onreadystatechange = null;
+            }
+        };
+        document.getElementsByTagName("head")[0].appendChild(script);
+    }
+    
+})()
+</script><script src="https://cdn.vaptcha.com/v2.js" id="vaptcha_v_js"></script><script type="text/javascript" id="AIKxncaZgVYldbLWTKkDXtwSptHHjDKs" charset="GBK">
+var pwdclear = 0;
+function initinput_login() {
+document.body.focus();
+if($('loginform_Lj1V5')) {
+$('loginform_Lj1V5').username.focus();
+}
+simulateSelect('loginfield_Lj1V5');
+}
+initinput_login();
+
+function clearpwd() {
+if(pwdclear) {
+$('password3_Lj1V5').value = '';
+}
+pwdclear = 0;
+}
+</script><link rel="stylesheet" href="http://bdimg.share.baidu.com/static/api/css/slide_share.css?v=855af98e.css"><link rel="stylesheet" type="text/css" href="https://cdn.vaptcha.com/theme_https.2.2.1.css" id="vaptcha_style"><script async="" charset="utf-8" src="https://cdn.vaptcha.com/vaptcha-sdk-popup.2.2.4.js"></script></head>
+
+<body id="nv_forum" class="pg_index" onkeydown="if(event.keyCode==27) return false;">
+<div id="append_parent"><div id="loginfield_Lj1V5_ctrl_menu" class="sltm" style="display: none; width: 45px;"><ul><li class="current">用户名</li><li>Email</li></ul></div></div><div id="ajaxwaitid"></div>
+<div id="toptb" class="cl">
+            <div class="wp">
+<div class="z"><a href="http://47.106.76.156/" onclick="addFavorite(this.href, '逆风学习网');return false;">收藏本站</a></div>
+<div class="y">
+                    </div>
+                <ul class="delu">
+         
+    	 <li><a href="member.php?mod=logging&amp;action=login" onclick="showWindow('login', this.href)">登录</a></li>
+         <li><a href="member.php?mod=register">注册</a></li>
+         <li><a href="javascript:;" onclick="showWindow('login', 'member.php?mod=logging&amp;action=login&amp;viewlostpw=1')" title="找回密码">找回密码</a></li>
+    </ul>
+    
+</div>
+        </div>
+
+<div id="qmenu_menu" class="p_pop blk" style="display: none;">
+<div class="ptm pbw hm">
+            请 <a href="member.php?mod=logging&amp;action=login" onclick="showWindow('login', this.href)"><strong>登录</strong></a> 后使用快捷导航<br>
+            没有帐号？<a href="member.php?mod=register" class="xi2 xw1">开始注册成为会员</a>
+</div>
+<div id="fjump_menu" class="btda"></div></div><div id="hd">
+<div>
+<div class="hdc cl">
+                <div id="fix">
+                <div id="logo"><h2><em><a href="./" title="逆风学习网"><img src="template/color_free22/images/logo.png" alt="逆风学习网" border="0"></a></em></h2>
+                    <div id="scbar" class="cl">
+<form id="scbar_form" method="post" autocomplete="off" onsubmit="searchFocus($('scbar_txt'))" action="search.php?searchsubmit=yes" target="_blank">
+<input type="hidden" name="mod" id="scbar_mod" value="forum">
+<input type="hidden" name="formhash" value="e0af843d">
+<input type="hidden" name="srchtype" value="title">
+<input type="hidden" name="srhfid" value="0">
+<input type="hidden" name="srhlocality" value="forum::index">
+        <div id="gao">
+<table cellspacing="0" cellpadding="0">
+<tbody><tr>
+
+<td class="scbar_txt_td"><input type="text" name="srchtxt" id="scbar_txt" value="请输入搜索内容" autocomplete="off" x-webkit-speech="" speech="" class=" xg1" placeholder="请输入搜索内容"></td>
+<td class="scbar_type_td"><a href="javascript:;" id="scbar_type" class="xg1" onclick="showMenu(this.id)" hidefocus="true">帖子</a></td>
+<td class="scbar_btn_td"><button type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="pn pnc" value="true"><strong class="xi2">搜索</strong></button></td>
+
+</tr>
+</tbody></table>
+        </div>
+</form>
+</div>
+<ul id="scbar_type_menu" class="p_pop" style="display: none;"><li><a href="javascript:;" rel="forum" class="curtype">帖子</a></li><li><a href="javascript:;" rel="user">用户</a></li></ul>
+<script type="text/javascript">
+initSearchmenu('scbar', '');
+</script>
+ 
+</div>
+                </div>
+                </div>
+                
+                <div id="nvv">
+                <div class="wpdh">
+<div id="nv">
+<a href="javascript:;" id="qmenu" onmouseover="delayShow(this, function () {showMenu({'ctrlid':'qmenu','pos':'34!','ctrlclass':'a','duration':2});showForummenu(0);})">快捷导航</a>
+<ul><li class="a" id="mn_forum"><a href="forum.php" hidefocus="true" title="BBS" style="font-weight: bold;text-decoration: underline;color: blue">论坛主页<span>BBS</span></a></li><li id="mn_N6737"><a href="plugin.php?id=xj_event" hidefocus="true">活动中心</a></li><li id="mn_N7e44"><a href="http://sou.kuwo.cn/ws/NSearch?type=all&amp;key=%E6%B5%81%E8%A1%8C&amp;src=onebox" hidefocus="true" target="_blank">在线音乐</a></li><li id="mn_home_9"><a href="home.php?mod=follow" hidefocus="true" title="Follow">广播<span>Follow</span></a></li><li id="mn_Na8ea"><a href="http://www.itwar.cn/home.php?mod=spacecp&amp;ac=plugin&amp;op=credit&amp;id=hux_credit:hux_credit" hidefocus="true">金币充值</a></li></ul>
+                    <script src="template/color_free22/images/fixed.js" type="text/javascript"></script>
+</div>
+                </div>
+                </div>
+                
+                
+                <div class="wpdh">
+<div id="mu" class="cl">
+                </div>
+                </div>
+                </div>
+</div>
+
+<div class="wp"></div>
+
+<div id="wp" class="wp">
+<div id="ct" class="wp cl w">
+<div class="nfl" id="main_succeed" style="display: none">
+<div class="f_c altw">
+<div class="alert_right">
+<p id="succeedmessage"></p>
+<p id="succeedlocation" class="alert_btnleft"></p>
+<p class="alert_btnleft"><a id="succeedmessage_href">如果您的浏览器没有自动跳转，请点击此链接</a></p>
+</div>
+</div>
+</div>
+<div class="nfl" id="main_message">
+<div class="f_c altw">
+<div id="messagetext" class="alert_info">
+<p>计算机IT学习特战队：599743346</p>
+</div>
+<div id="messagelogin" style="">
+<div id="main_messaqge_Lj1V5">
+<div id="layer_login_Lj1V5">
+<h3 class="flb">
+<em id="returnmessage_Lj1V5">
+用户登录</em>
+<span></span>
+</h3>
+<form method="post" autocomplete="off" name="login" id="loginform_Lj1V5" class="cl" onsubmit="pwdclear = 1;ajaxpost('loginform_Lj1V5', 'returnmessage_Lj1V5', 'returnmessage_Lj1V5', 'onerror');return false;" action="member.php?mod=logging&amp;action=login&amp;loginsubmit=yes&amp;frommessage&amp;loginhash=Lj1V5">
+<div class="c cl">
+<input type="hidden" name="formhash" value="e0af843d">
+<input type="hidden" name="referer" value="http://www.itwar.cn/">
+<div class="rfm">
+<table>
+<tbody><tr>
+<th>
+<span class="login_slct">
+<select name="loginfield" style="float: left; display: none;" width="45" id="loginfield_Lj1V5" selecti="0">
+
+
+<option value="username"></option></select><a href="javascript:;" id="loginfield_Lj1V5_ctrl" style="width:45px" tabindex="1">用户名</a>
+</span>
+</th>
+<td><input type="text" name="username" id="username_Lj1V5" autocomplete="off" size="30" class="px p_fre" tabindex="1" value=""></td>
+<td class="tipcol"><a href="member.php?mod=register">开始注册成为会员</a></td>
+</tr>
+</tbody></table>
+</div>
+<div class="rfm">
+<table>
+<tbody><tr>
+<th><label for="password3_Lj1V5">密码:</label></th>
+<td><input type="password" id="password3_Lj1V5" name="password" onfocus="clearpwd()" size="30" class="px p_fre" tabindex="1"></td>
+<td class="tipcol"><a href="javascript:;" onclick="display('layer_login_Lj1V5');display('layer_lostpw_Lj1V5');" title="找回密码">找回密码</a></td>
+</tr>
+</tbody></table>
+</div>
+<div class="rfm">
+<table>
+<tbody><tr>
+<th>安全提问:</th>
+<td><select id="loginquestionid_Lj1V5" width="213" name="questionid" onchange="if($('loginquestionid_Lj1V5').value > 0) {$('loginanswer_row_Lj1V5').style.display='';} else {$('loginanswer_row_Lj1V5').style.display='none';}">
+<option value="0">安全提问(未设置请忽略)</option>
+<option value="1">母亲的名字</option>
+<option value="2">爷爷的名字</option>
+<option value="3">父亲出生的城市</option>
+<option value="4">您其中一位老师的名字</option>
+<option value="5">您个人计算机的型号</option>
+<option value="6">您最喜欢的餐馆名称</option>
+<option value="7">驾驶执照最后四位数字</option>
+</select></td>
+</tr>
+</tbody></table>
+</div>
+<div class="rfm" id="loginanswer_row_Lj1V5" style="display:none">
+<table>
+<tbody><tr>
+<th>答案:</th>
+<td><input type="text" name="answer" id="loginanswer_Lj1V5" autocomplete="off" size="30" class="px p_fre" tabindex="1"></td>
+</tr>
+</tbody></table>
+</div>
+
+
+<style>
+    #vaptcha_5cf867786ade3 {
+        padding-bottom: 10px
+    }
+    #vaptcha_container_5cf867786ade3 {
+                    width: 209px;
+            height: 36px;
+    }
+    .vaptcha-init-main{
+        display: table;
+        width: 100%;
+        height: 100%;
+        background-color: #EEEEEE;
+    }
+    .vaptcha-init-loading {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center
+    }
+
+    .vaptcha-init-loading>a {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+    }
+    .vaptcha-init-loading>a img{
+        vertical-align: middle
+    }
+    .vaptcha-init-loading .vaptcha-text {
+        font-family: sans-serif;
+        font-size: 12px;
+        color: #CCCCCC;
+        vertical-align: middle
+    }
+    .vaptcha-init-loading .vaptcha-text a {
+        font-family: sans-serif;
+        font-size: 12px;
+        color: #CCCCCC;
+        text-decoration: none;
+    }
+</style>
+<div id="vaptcha_5cf867786ade3" style="display: none">
+
+<input type="hidden" name="vaptcha_token">
+</div>
+
+<div class="rfm">
+<table>
+    <tbody><tr>
+    
+    <th><label for="vaptcha_container_5cf867786ade3">
+        
+            人机验证:
+    </label></th>
+    
+    <td>
+        <div id="vaptcha_container_5cf867786ade3">
+    <div class="vp-basic-btn vp-dark-btn vp-default-btn vp-waves" style="background-color: rgb(87, 171, 255); height: 36px;">
+      <div class="vp-btn-bg"></div>
+      <div class="vp-basic-cont">
+        <div class="vp-shield vp-vertical">
+          <span class="vp-vertical-cont">
+            <i class="vp-circle-i"></i>
+            <!--hover 'u5706'u7F29'u653E-->
+            <span class="vp-circle-h"></span>
+          </span>
+        </div>
+        <a class="vp-about vp-vertical" href="https://www.vaptcha.com/document/faq#%E6%93%8D%E4%BD%9C%E6%BC%94%E7%A4%BA" title="如何验证?" target="_blank">
+          <span class="vp-vertical-cont">
+            <i></i>
+          </span>
+        </a>
+        <div class="vp-tip" style="line-height: 36px;">单击进行人机验证</div>
+      </div>
+    </div>
+    </div>
+    </td>
+    </tr>
+    </tbody>
+</table>
+</div>
+
+
+<script type="text/javascript">
+(function () {
+    window.console = window.console || {log: function() {return false;}}
+    console.log('vaptcha version 2.3.1')
+    function addEvent(el, type, cb){
+        if (el.addEventListener) {
+            el.addEventListener(type, cb); 
+        } else if (el.attachEvent)  {
+            el.attachEvent('on' + type, cb);
+        }
+    }
+    function onload() {
+        var initVaptcha = function(element, form, type, successCallback){
+            var _v = new function () {
+                this.isPass = false;
+                this.vaptcha = null;
+                this.msg = null;
+                this.refresh = function () {
+                    if (this.isPass) {
+                        // this.vaptcha.destroy();
+                        // return initVaptcha(element, form, type, successCallback);
+                        this.vaptcha.reset();
+                    }
+                    return this;
+                };
+                this.notify = function () {
+                    if (this.msg) {
+                        this.msg.style.display = 'block';
+                    } else {
+                        var msg = document.createElement('span');
+                        msg.className = 'rq';
+                        msg.innerHTML = '&#35831;&#36827;&#34892;&#20154;&#26426;&#39564;&#35777;';
+                        this.msg = msg;
+                        element.parentNode.appendChild(msg);
+                    }
+                }
+            }()
+            var options = {
+                vid: '5b83baaafc650e5e989e3273',
+                container: element,
+                type: 'click',
+                // effect: "popup",
+                style: "dark",
+                https: false,
+                color: "#57ABFF",
+                lang: 'zh-CN',
+                scene: '01',
+                ai: true,
+                outage: './plugin.php?id=vaptcha&type=downtime'
+            }
+            window.vaptcha(options).then(function (obj) {
+                obj.listen('pass', function () {
+                    _v.isPass = true;
+                    _v.msg && (_v.msg.style.display = 'none');
+                    var input = form.querySelectorAll('input[name="vaptcha_token"]')[0];
+                    input.value = obj.getToken()
+                    successCallback && successCallback();
+                })
+                var inputs = form.getElementsByTagName('input');
+                obj.render();
+                _v.vaptcha = obj;
+            })   
+            return _v;
+        }
+        var form = document.getElementById('vaptcha_5cf867786ade3'); 
+        var vaptcha = document.getElementById('vaptcha_container_5cf867786ade3'); 
+        
+var vaptcha = document.getElementById('vaptcha_container_5cf867786ade3');
+_vaptcha = initVaptcha(vaptcha, form);
+
+
+var loginbtn = form.parentElement.getElementsByTagName('button')['loginsubmit'];
+addEvent(loginbtn, 'click',function(){
+    _vaptcha.refresh();
+})
+
+
+
+
+    }
+    var script = document.getElementById('vaptcha_v_js');
+    if(script && script.loaded == 'success'){ 
+        onload();
+    } else {
+        script = document.createElement('script');
+        script.src = 'https://cdn.vaptcha.com/v2.js';
+        script.id = 'vaptcha_v_js';
+        script.onload = script.onreadystatechange = function(){
+            if(!this.readyState || this.readyState=='loaded' || this.readyState=='complete'){ 
+                onload();
+                script.loaded = true;
+                script.onload = script.onreadystatechange = null;
+            }
+        };
+        document.getElementsByTagName("head")[0].appendChild(script);
+    }
+    
+})()
+</script>
+
+<div class="rfm  bw0">
+<table>
+<tbody><tr>
+<th></th>
+<td><label for="cookietime_Lj1V5"><input type="checkbox" class="pc" name="cookietime" id="cookietime_Lj1V5" tabindex="1" value="2592000">自动登录</label></td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="rfm mbw bw0">
+<table width="100%">
+<tbody><tr>
+<th>&nbsp;</th>
+<td>
+<button class="pn pnc" type="submit" name="loginsubmit" value="true" tabindex="1"><strong>登录</strong></button>
+</td>
+<td>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="rfm bw0 ">
+<hr class="l">
+<table>
+<tbody><tr>
+<th>快捷登录:</th>
+<td>
+<a href="plugin.php?id=wechat:login"><img src="source/plugin/wechat/image/wechat_login.png" class="vm"></a>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</form>
+</div>
+<div id="layer_lostpw_Lj1V5" style="display: none;">
+<h3 class="flb">
+<em id="returnmessage3_Lj1V5">找回密码</em>
+<span></span>
+</h3>
+<form method="post" autocomplete="off" id="lostpwform_Lj1V5" class="cl" onsubmit="ajaxpost('lostpwform_Lj1V5', 'returnmessage3_Lj1V5', 'returnmessage3_Lj1V5', 'onerror');return false;" action="member.php?mod=lostpasswd&amp;lostpwsubmit=yes&amp;infloat=yes">
+<div class="c cl">
+<input type="hidden" name="formhash" value="e0af843d">
+<input type="hidden" name="handlekey" value="lostpwform">
+<div class="rfm">
+<table>
+<tbody><tr>
+<th><span class="rq">*</span><label for="lostpw_email">Email:</label></th>
+<td><input type="text" name="email" id="lostpw_email" size="30" value="" tabindex="1" class="px p_fre"></td>
+</tr>
+</tbody></table>
+</div>
+<div class="rfm">
+<table>
+<tbody><tr>
+<th><label for="lostpw_username">用户名:</label></th>
+<td><input type="text" name="username" id="lostpw_username" size="30" value="" tabindex="1" class="px p_fre"></td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="rfm mbw bw0">
+<table>
+<tbody><tr>
+<th></th>
+<td><button class="pn pnc" type="submit" name="lostpwsubmit" value="true" tabindex="100"><span>提交</span></button></td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</form>
+</div>
+</div>
+
+<div id="layer_message_Lj1V5" style="display: none;">
+<h3 class="flb" id="layer_header_Lj1V5">
+</h3>
+<div class="c"><div class="alert_right">
+<div id="messageleft_Lj1V5"></div>
+<p class="alert_btnleft" id="messageright_Lj1V5"></p>
+</div>
+</div>
+
+<script type="text/javascript" reload="1">
+var pwdclear = 0;
+function initinput_login() {
+document.body.focus();
+if($('loginform_Lj1V5')) {
+$('loginform_Lj1V5').username.focus();
+}
+simulateSelect('loginfield_Lj1V5');
+}
+initinput_login();
+
+function clearpwd() {
+if(pwdclear) {
+$('password3_Lj1V5').value = '';
+}
+pwdclear = 0;
+}
+</script></div></div>
+<script type="text/javascript">ajaxget('member.php?mod=logging&action=login&infloat=yes&frommessage', 'messagelogin');</script>
+</div>
+</div>
+</div></div>
+    
+    <div id="footer">
+<div id="ft" class="wp cl">
+    
+    <div id="xinxi">
+
+    <em>你的未来取决于你现在点点滴滴的努力</em>
+    <span>联系邮箱：nifengstudy@qq.com</span>
+
+    </div>
+    
+<div id="ftw">
+<div id="flk" class="y">
+<p>
+<a href="#" style="font-weight: bold;color: red">免责声明：本站资源来源于各大论坛 站友上传 不对其负法律责任 如有侵犯您的权益 联系删除</a><span class="pipe">|</span><strong><a href="http://www.itwar.cn/" target="_blank">逆风学习网</a></strong>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"6","bdPos":"right","bdTop":"250"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</p>
+<p class="xs1">
+GMT+8, 2019-6-6 09:08<span id="debuginfo">
+, Processed in 0.017487 second(s), 4 queries
+.
+</span>
+</p>
+</div>
+<div id="frt">
+<p>Powered by <strong><a href="http://www.discuz.net" target="_blank">Discuz!</a></strong> <em>X3.4</em></p>
+<p class="xs1">© 2001-2013 <a href="http://www.comsenz.com" target="_blank">Comsenz Inc.</a></p>
+</div></div>
+    </div>
+    </div>
+<div id="scrolltop">
+<span hidefocus="true"><a title="返回顶部" onclick="window.scrollTo('0','0')" class="scrolltopa"><b>返回顶部</b></a></span>
+</div>
+<script type="text/javascript">_attachEvent(window, 'scroll', function () { showTopLink(); });checkBlind();</script>
+
+
+<div class="bdshare-slide-button-box bdshare-slide-style-r6" style="top: 250px; width: 0px; z-index: 99999; right: 0px;" data-bd-bind="1559783287763"><a href="#" onclick="return false;" class="bdshare-slide-button" style="left: -24px;"></a><div class="bdshare-slide-list-box" style="width: 0px; display: none;"><div class="bdshare-slide-top">分享到</div><div class="bdshare-slide-list"><ul class="bdshare-slide-list-ul" style="width: 226px;"></ul></div><div class="bdshare-slide-bottom" style="width: 226px;"><a href="#" onclick="return false;" class="slide-more" data-cmd="more">更多...</a></div></div></div><div v-obj-id="1e0b4c9c-d137-6793-8d63-812c7a6a55c1" class="vaptchaNavDiv vaptcha-popup" style="position: fixed; z-index: 99999; display: none;">
+      <div class="vaptcha-pop" style="z-index: 100001; width: 0px; height: 0px;">
+        <div id="vaptcha" class="vaptcha">
+          <div class="vp-main">
+            <div class="vp-code">
+              <div class="vp-loading-pictrue">
+                <img src="https://cdn.vaptcha.com/vp-loading-pictrue.gif">
+              </div>
+              <div class="avoid-drag"></div>
+              <img ondragstart="return false" class="vp-main-bg">
+              <!--频率-->
+            </div>
+            <div class="vp-frequency">
+              <span class="vp-frequency-low"></span>
+            </div>
+            <div class="vp-sponsor-ad">
+              <a class="sponsor"></a>
+              <a class="platform-ad"></a>
+            </div>
+            <div class="vp-opt">
+              <div class="vp-state vp-s-init">
+                <i class="vp-s-icon"></i>
+                <span class="vp-s-txt">请绘制图中手势完成人机验证</span>
+              </div>
+              <div class="vp-btn-group">
+                <a class="vp-btn-refresh" title="刷新">
+                  <i class="vp-handle vp-refresh"></i>
+                </a>
+                <a class="vp-btn-tip" title="如何验证?" href="https://www.vaptcha.com/document/faq#%E6%93%8D%E4%BD%9C%E6%BC%94%E7%A4%BA" target="_blank">
+            <i class="vp-guide"></i>
+          </a>
+                <a class="vp-btn-close">
+                  <i class="vp-handle vp-close"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="vaptcha-mask"></div>
+      </div></body></html>
